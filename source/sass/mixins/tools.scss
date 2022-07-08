@@ -1,0 +1,4 @@
+@mixin show-block($color: red) {
+  outline: 2px dashed $color;
+  outline-offset: -2px;
+}

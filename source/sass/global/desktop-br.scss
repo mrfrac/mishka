@@ -1,0 +1,13 @@
+.desktop-br {
+  @include mobile-only {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: inline;
+  }
+}

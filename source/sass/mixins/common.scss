@@ -1,0 +1,38 @@
+@mixin clear-margin {
+  margin: 0;
+}
+
+@mixin clear-padding {
+  padding: 0;
+}
+
+@mixin clear-list-styles {
+  @include clear-margin;
+  @include clear-padding;
+
+  list-style: none;
+}
+
+@mixin green-line($top: 15px) {
+  &::before {
+    content: "";
+    width: calc(100vw - 20px);
+    height: 2px;
+    background-color: $basic-green;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 1;
+
+    @include tablet {
+      width: 100vw;
+      left: -70px;
+      top: 22px;
+    }
+
+    @include desktop {
+      left: -110px;
+      max-width: 1440px;
+    }
+  }
+}
