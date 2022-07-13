@@ -13,14 +13,105 @@
   <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font">
 </head>
 <body class="page-body">
-  <header class="main-header">
+  <header class="page-header">
+    <a class="page-header__logo-link" href="index.html">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </picture>
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list main-nav__list--user">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--search">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <div class="main-nav__delivery">
+        <a class="main-nav__delivery-link">Бесплатная доставка по&nbsp;России</a>
+      </div>
+    </nav>
+    <div class="page-header__title">
+      <h1 class="page-header__title-text">Каталог товаров</h1>
+    </div>
   </header>
 
-  <main class="main-container">
+  <main class="page-container">
   </main>
 
-  <footer class="main-footer">
+  <footer class="page-footer">
+    <div class="page-footer-wrapper">
+      <a class="page-footer__logo-link" href="index.html">
+        <svg class="page-footer__logo-icon" width="102" height="34">
+          <use href="img/sprite.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__item-link" href="https://vk.com" aria-label="Профиль в VK">
+              <svg width="28" height="22" viewBox="0 0 29 22">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="https://youtube.com" aria-label="Наш канал YouTube">
+              <svg width="28" height="22" viewBox="0 0 29 22">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="https://web.telegram.org/" aria-label="Наш канал в телеграм">
+              <svg width="28" height="22" viewBox="0 0 29 22">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <p class="copyright__text">Разработано</p>
+          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <div class="modal cart">
+    <div class="cart__wrapper">
+      <h2 class="cart__title">Добавить в корзину</h2>
+      <p class="cart__text">Выберите размер:</p>
+      <ul class="cart__options">
+        <li class="cart__option">
+          <button class="cart__option-button" type="button">S</button>
+        </li>
+        <li class="cart__option">
+          <button class="cart__option-button" type="button">M</button>
+        </li>
+        <li class="cart__option">
+          <button class="cart__option-button" type="button">L</button>
+        </li>
+      </ul>
+      <button class="cart__add-button">Добавить</button>
+    </div>
+  </div>
 
   <script src="js/menu.min.js"></script>
 </body>
