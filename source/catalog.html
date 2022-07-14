@@ -55,6 +55,103 @@
   </header>
 
   <main class="page-container">
+    <section class="catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item product">
+          <a class="product__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/bunny-desktop.webp 1x, img/bunny-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="bunny-desktop.jpg 1x, img/bunny-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bunny-tablet.webp 1x, img/bunny-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="bunny-tablet.jpg 1x, img/bunny-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/bunny-mobile.webp 1x, img/bunny-mobile@2x.webp 2x">
+              <img class="product__picture" src="img/bunny-mobile.jpg" srcset="bunny-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </picture>
+          </a>
+          <div class="product__description">
+            <a class="product__link" href="#">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="product__info">Рост 30 см, вес 200 г</p>
+            <a class="product__cart-button">
+              <span class="product__price">1 200 руб.</span>
+              <svg class="product__cart-icon" width="20" height="19">
+                <use href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="catalog__item product">
+          <a class="product__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/basket-desktop.webp 1x, img/basket-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="basket-desktop.jpg 1x, img/basket-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/basket-tablet.webp 1x, img/basket-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="basket-tablet.jpg 1x, img/basket-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/basket-mobile.webp 1x, img/basket-mobile@2x.webp 2x">
+              <img class="product__picture" src="img/basket-mobile.jpg" srcset="img/basket-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
+            </picture>
+          </a>
+          <div class="product__description">
+            <a class="product__link" href="#">
+              <h3 class="product__title">Корзинка для белья</h3>
+            </a>
+            <p class="product__info">Диаметр 15 см, высота 10 см</p>
+            <a class="product__cart-button">
+              <span class="product__price">690 руб.</span>
+              <svg class="product__cart-icon" width="20" height="19">
+                <use href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="catalog__item product">
+          <a class="product__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/big-basket-desktop.webp 1x, img/big-basket-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="big-basket-desktop.jpg 1x, img/big-basket-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/big-basket-tablet.webp 1x, img/big-basket-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="big-basket-tablet.jpg 1x, img/big-basket-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/big-basket-mobile.webp 1x, img/big-basket-mobile@2x.webp 2x">
+              <img class="product__picture" src="img/big-basket-mobile.jpg" srcset="big-basket-mobile@2x.jpg 2x" width="260" height="195" alt="Большая корзинка для игрушек">
+            </picture>
+          </a>
+          <div class="product__description">
+            <a class="product__link" href="#">
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="product__info">Диаметр 30 см, высота 30 см</p>
+            <a class="product__cart-button">
+              <span class="product__price">1 500 руб.</span>
+              <svg class="product__cart-icon" width="20" height="19">
+                <use href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="production">
+      <div class="production__wrapper">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__cover-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/production-video-tablet.webp 1x, img/production-video-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/production-video-tablet.jpg 1x, img/production-video-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/production-video-mobile.webp 1x, img/production-video-mobile@2x.webp 2x">
+            <img class="production__cover-picture" src="img/production-video-mobile.jpg" srcset="img/production-video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
+          </picture>
+          <svg class="production__play-button" width="101" height="77">
+            <use href="img/sprite.svg#play"></use>
+          </svg>
+        </div>
+        <p class="production__text">
+          По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.
+        </p>
+        <button class="button production__button">Сделать заказ</button>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
