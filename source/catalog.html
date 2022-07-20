@@ -41,10 +41,10 @@
       </ul>
       <ul class="main-nav__list main-nav__list--offers">
         <li class="main-nav__item">
-          <a class="main-nav-link">Новые поступления</a>
+          <a class="main-nav__link">Новые поступления</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav-link">Распродажа</a>
+          <a class="main-nav__link">Распродажа</a>
         </li>
       </ul>
       <p class="main-nav__delivery-offer">Бесплатная доставка по&nbsp;России</p>
@@ -142,9 +142,12 @@
             <source type="image/webp" srcset="img/production-video-mobile.webp 1x, img/production-video-mobile@2x.webp 2x">
             <img class="production__cover-picture" src="img/production-video-mobile.jpg" srcset="img/production-video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
           </picture>
-          <svg class="production__play-button" width="101" height="77">
-            <use href="img/sprite.svg#play"></use>
-          </svg>
+          <button class="production__play-button">
+            <svg class="production__play-icon" width="101" height="77">
+              <use href="img/sprite.svg#play"></use>
+            </svg>
+            <span class="visually-hidden">Проиграть видео, где мы рассказываем о процессе производства наших изделий</span>
+          </button>
         </div>
         <p class="production__text">
           По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.
