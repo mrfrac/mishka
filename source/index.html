@@ -41,10 +41,10 @@
       </ul>
       <ul class="main-nav__list main-nav__list--offers">
         <li class="main-nav__item">
-          <a class="main-nav-link">Новые поступления</a>
+          <a class="main-nav__link">Новые поступления</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav-link">Распродажа</a>
+          <a class="main-nav__link">Распродажа</a>
         </li>
       </ul>
       <p class="main-nav__delivery-offer">Бесплатная доставка по&nbsp;России</p>
@@ -66,26 +66,26 @@
       <div class="promo__wrapper">
         <div class="promo__header">
           <h2 class="promo__title">Вязаные корзинки</h2>
-          <span class="promo__tag">ТОВАР НЕДЕЛИ</span>
+          <span class="promo__tag">Товар недели</span>
         </div>
         <div class="promo__body">
           <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
           <ul class="promo__params">
             <li class="promo__params-item">
-              <span class="promo__params-item-label">Цвет:</span>
-              <span class="promo__params-item-value">тиффани/серый</span>
+              <span class="promo__params-label">Цвет:</span>
+              <span class="promo__params-value">тиффани/серый</span>
             </li>
             <li class="promo__params-item">
-              <span class="promo__params-item-label">Диаметр:</span>
-              <span class="promo__params-item-value">25 см</span>
+              <span class="promo__params-label">Диаметр:</span>
+              <span class="promo__params-value">25 см</span>
             </li>
             <li class="promo__params-item">
-              <span class="promo__params-item-label">Высота:</span>
-              <span class="promo__params-item-value">15 см</span>
+              <span class="promo__params-label">Высота:</span>
+              <span class="promo__params-value">15 см</span>
             </li>
           </ul>
           <p class="promo__price">Цена: 990 руб.</p>
-          <button class="button promo-button" type="button">ЗАКАЗАТЬ</button>
+          <a class="button promo-button" href="#">ЗАКАЗАТЬ</a>
         </div>
         <picture>
           <source type="image/webp" media="(min-width: 1150px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop@2x.webp 2x">
@@ -124,7 +124,7 @@
         <button class="reviews__button reviews__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
         <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
       </div>
-      <button class="reviews__review-button" type="button">Написать</button>
+      <a class="reviews__review-button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
@@ -132,18 +132,18 @@
       </div>
       <div class="contacts__email">
         <span class="contacts__email-label">e-mail:</span>
-        <span class="contacts__email-value">info@mimimishkashop.ru</span>
+        <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
       </div>
-      <div class="contacts__address">
+      <address class="contacts__address">
         <span class="contacts__address-label">адрес:</span>
         <span class="contacts__address-value">
           г. Санкт-Петербург <br>
           ул. Большая Конюшенная <br>
           д. 19/8, офис 101
         </span>
-      </div>
+      </address>
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586849!2d30.32085335225451!3d59.93871648178725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1657699839672!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <button class="button contacts__button">Напишите нам</button>
+      <a class="button contacts__button" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -190,22 +190,22 @@
       </div>
   </footer>
 
-  <div class="modal cart">
-    <div class="cart__wrapper">
-      <h2 class="cart__title">Добавить в корзину</h2>
-      <p class="cart__text">Выберите размер:</p>
-      <ul class="cart__options">
-        <li class="cart__option">
-          <button class="cart__option-button" type="button">S</button>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <ul class="size-options">
+        <li class="size-options__item">
+          <button class="size-options__button" type="button">S</button>
         </li>
-        <li class="cart__option">
-          <button class="cart__option-button" type="button">M</button>
+        <li class="size-options__item">
+          <button class="size-options__button" type="button">M</button>
         </li>
-        <li class="cart__option">
-          <button class="cart__option-button" type="button">L</button>
+        <li class="size-options__item">
+          <button class="size-options__button" type="button">L</button>
         </li>
       </ul>
-      <button class="cart__add-button">Добавить</button>
+      <a class="button modal__button" href="#">Добавить</a>
     </div>
   </div>
 
