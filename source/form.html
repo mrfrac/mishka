@@ -41,10 +41,10 @@
       </ul>
       <ul class="main-nav__list main-nav__list--offers">
         <li class="main-nav__item">
-          <a class="main-nav-link">Новые поступления</a>
+          <a class="main-nav__link">Новые поступления</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav-link">Распродажа</a>
+          <a class="main-nav__link">Распродажа</a>
         </li>
       </ul>
       <p class="main-nav__delivery-offer">Бесплатная доставка по&nbsp;России</p>
@@ -58,112 +58,93 @@
     <div class="form">
       <div class="form__wrapper">
         <p class="form__description">Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
-        <form class="form__form" method="get" action="https://echo.htmlacademy.ru">
+        <form class="form__body" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form__block form-category">
-            <legend class="form__block-title">Тип</legend>
+            <legend class="form-category__title">Тип</legend>
             <ul class="form-category__list">
-              <li class="form-category__item">
-                <div class="choose-control">
-                  <input class="choose-control__input" type="radio" id="interior" name="category" value="1" checked>
-                  <label class="choose-control__label" for="interior">
-                    Аксессуар для интерьера
-                  </label>
-                </div>
+              <li class="form-category__item choose-control">
+                <input class="choose-control__input" type="radio" id="interior" name="category" value="1" checked>
+                <label class="choose-control__label" for="interior">
+                  Аксессуар для интерьера
+                </label>
               </li>
-              <li class="form-category__item">
-                <div class="choose-control">
-                  <input class="choose-control__input" type="radio" id="toy" name="category" value="1">
-                  <label class="choose-control__label" for="toy">
-                    Детская игрушка
-                  </label>
-                </div>
+              <li class="form-category__item choose-control">
+                <input class="choose-control__input" type="radio" id="toy" name="category" value="1">
+                <label class="choose-control__label" for="toy">
+                  Детская игрушка
+                </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__block form-color">
-            <legend class="form__block-title">Цвет</legend>
+            <legend class="form-color__title">Цвет</legend>
             <ul class="form-color__list">
-              <li class="form-color__item">
-                <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="white" name="white" checked>
-                  <label class="choose-control__label" for="white">Белый</label>
-                </div>
+              <li class="form-color__item choose-control">
+                <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="white" name="white" checked>
+                <label class="choose-control__label" for="white">Белый</label>
               </li>
-              <li class="form-color__item">
-                <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="gray" name="gray" checked>
-                  <label class="choose-control__label" for="gray">Серый</label>
-                </div>
+              <li class="form-color__item choose-control">
+                <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="gray" name="gray" checked>
+                <label class="choose-control__label" for="gray">Серый</label>
               </li>
-              <li class="form-color__item">
-                <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="tiffany" name="tiffany">
-                  <label class="choose-control__label" for="tiffany">Тиффани</label>
-                </div>
+              <li class="form-color__item choose-control">
+                <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="tiffany" name="tiffany">
+                <label class="choose-control__label" for="tiffany">Тиффани</label>
               </li>
-              <li class="form-color__item">
-                <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="black" name="black">
-                  <label class="choose-control__label" for="black">Черный</label>
-                </div>
+              <li class="form-color__item choose-control">
+                <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="black" name="black">
+                <label class="choose-control__label" for="black">Черный</label>
               </li>
-              <li class="form-color__item">
-                <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="pink" name="pink">
-                  <label class="choose-control__label" for="pink">Розовый</label>
-                </div>
+              <li class="form-color__item choose-control">
+                <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="pink" name="pink">
+                <label class="choose-control__label" for="pink">Розовый</label>
               </li>
-              <li class="form-color__item">
-                <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="orange" name="orange">
-                  <label class="choose-control__label" for="orange">Оранжевый</label>
-                </div>
+              <li class="form-color__item choose-control">
+                <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="orange" name="orange">
+                <label class="choose-control__label" for="orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__block form-name">
-            <legend class="form__block-title">ФИО</legend>
+            <legend class="form-name__title">ФИО</legend>
             <ul class="form-name__list">
-              <li class="form-name__item">
-                <div class="text-control">
-                  <label class="text-control__label" for="first-name">Имя:</label>
-                  <input class="text-control__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-                </div>
+              <li class="form-name__item text-control">
+                <label class="text-control__label" for="first-name">Имя:</label>
+                <input class="text-control__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
               </li>
-              <li class="form-name__item">
-                <div class="text-control">
-                  <label class="text-control__label" for="last-name">Фамилия:</label>
-                  <input class="text-control__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
-                </div>
+              <li class="form-name__item text-control">
+                <label class="text-control__label" for="last-name">Фамилия:</label>
+                <input class="text-control__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="form-name__item">
-                <div class="text-control">
-                  <label class="text-control__label" for="middle-name">Отчество:</label>
-                  <input class="text-control__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
-                </div>
+              <li class="form-name__item text-control">
+                <label class="text-control__label" for="middle-name">Отчество:</label>
+                <input class="text-control__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__block form-phone">
-            <legend class="form__block-title">ТЕЛ</legend>
-            <div class="text-control form-phone__item">
+            <legend class="form-phone__title">Тел</legend>
+            <div class="text-control">
+              <label class="visually-hidden" for="phone">Телефон</label>
               <input class="text-control__input text-control__input--phone" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             </div>
           </fieldset>
           <fieldset class="form__block form-email">
-            <legend class="form__block-title">E-mail</legend>
-            <div class="text-control form-email__item">
-              <input class="text-control__input text-control__input--phone" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+            <legend class="form-email__title">E-mail</legend>
+            <div class="text-control">
+              <label class="visually-hidden" for="email">E-mail</label>
+              <input class="text-control__input text-control__input--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
             </div>
           </fieldset>
           <fieldset class="form__block form-comments">
-            <legend class="form__block-title">ДОП</legend>
+            <legend class="form-comments__title">Доп</legend>
             <div class="text-control">
+              <label class="visually-hidden" for="comments">Дополнительно</label>
               <textarea class="text-control__input text-control__input--textarea" id="comments" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
           <div class="form__submit-area">
-            <button class="button form__submit-button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+            <button class="button form__submit-button" type="submit">Отправить заказ</button>
             <span class="form__submit-note">*Поля обязательны для заполнения</span>
           </div>
         </form>
