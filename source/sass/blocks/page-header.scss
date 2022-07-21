@@ -51,3 +51,36 @@
     }
   }
 }
+
+.page-header__navigation-toggle {
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  width: 20px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: url("../img/icons/menu-open.svg");
+    width: 20px;
+    height: 14px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: block;
+  }
+}
+
+.page-header__navigation-toggle--opened {
+  width: 21px;
+  height: 20px;
+  top: 29px;
+
+  &::before {
+    content: url("../img/icons/menu-close.svg");
+    width: 21px;
+    height: 20px;
+
+  }
+}

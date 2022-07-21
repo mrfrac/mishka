@@ -2,40 +2,7 @@
   position: absolute;
   top: 79px;
   left: 0;
-}
-
-.main-nav__toggle {
-  position: fixed;
-  right: 30px;
-  top: 32px;
-  width: 20px;
-  height: 14px;
-  background-color: transparent;
-  border: none;
-
-  &::before {
-    content: url("../img/icons/menu-open.svg");
-    width: 20px;
-    height: 14px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    display: block;
-  }
-}
-
-.main-nav--opened .main-nav__toggle {
-  width: 21px;
-  height: 20px;
-  top: 29px;
-  right: 43px;
-
-  &::before {
-    content: url("../img/icons/menu-close.svg");
-    width: 21px;
-    height: 20px;
-
-  }
+  z-index: 1;
 }
 
 .main-nav__list {
