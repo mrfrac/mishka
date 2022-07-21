@@ -35,7 +35,7 @@
 }
 
 .page-header__title--index {
-  padding-top: 90px;
+  padding-top: 73px;
   padding-bottom: 120px;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,6 +44,7 @@
   @include mobile-only {
     background-size: 320px 373px;
     background-image: url("../img/hero-mobile.jpg");
+    background-position: 0 -16px;
 
     @include retina {
       background-image: url("../img/hero-mobile@2x.jpg");

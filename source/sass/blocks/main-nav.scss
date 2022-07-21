@@ -28,6 +28,7 @@
   width: 21px;
   height: 20px;
   top: 29px;
+  right: 43px;
 
   &::before {
     content: url("../img/icons/menu-close.svg");
@@ -49,7 +50,7 @@
   background-color: $main-bg-color;
   padding-top: 29px;
   padding-left: 76px;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
@@ -123,7 +124,7 @@
     height: 18px;
     display: block;
     position: absolute;
-    left: -44px;
+    left: -45px;
     top: 3px;
   }
 }
