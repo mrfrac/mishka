@@ -1,4 +1,9 @@
+@import "normalize.css/normalize";
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "global";
+@import "blocks/page-body";
+@import "blocks/contacts";
+@import "blocks/modal";
+@import "blocks/production";
