@@ -7,3 +7,11 @@
 }
 
 // Main fonts
+
+@mixin mb-s17-h24 {
+  @include typography-template(17px, 24px, $main-font-family, 700);
+}
+
+@mixin mb-s27-h30 {
+  @include typography-template(27px, 30px, $main-font-family, 700);
+}
