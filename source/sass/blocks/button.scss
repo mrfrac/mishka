@@ -19,4 +19,13 @@
   color: #444444;
   padding-top: 16px;
   padding-bottom: 13px;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

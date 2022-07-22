@@ -8,3 +8,15 @@
   padding: 0;
   gap: 24px;
 }
+
+.social__item-link {
+  fill: #231f20;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -8,6 +8,15 @@
   border-top: 1px solid #e5e5e5;
   margin-left: 30px;
   margin-right: 30px;
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(#46c1ae, 0.3);
+  }
 }
 
 .copyright__text {
