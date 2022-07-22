@@ -34,13 +34,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  &::before {
-    &:hover {
-      fill: red;
-      stroke: green;
-    }
-  }
 }
 
 .main-nav--closed .main-nav__list {
@@ -83,6 +76,7 @@
     mask-image: url("../img/icons/search.svg");
     mask-size: 18px 18px;
     background-color: #000000;
+    opacity: 0.2;
     width: 18px;
     height: 18px;
     display: block;
@@ -93,14 +87,13 @@
 }
 
 .main-nav__link:hover:before {
-  background-color: rgba(#63d1bb, 1);
-  fill: red;
+  background-color: #63d1bb; //rgba(#63d1bb, 1);
   opacity: 1;
 }
 
 .main-nav__link:active:before {
-  background-color: rgba(#63d1bb, 0.3);
-  opacity: 0.3;
+  background-color: #63d1bb;
+  opacity: 1;
 }
 
 .main-nav__link--cart {
@@ -109,7 +102,7 @@
   &::before {
     content: "";
     mask-image: url("../img/icons/cart.svg");
-    background-color: #000000;
+    background-color: rgba(#000000, 0.2);
     mask-size: 21px 18px;
     width: 21px;
     height: 18px;
