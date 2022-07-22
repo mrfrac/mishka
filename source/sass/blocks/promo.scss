@@ -1,10 +1,14 @@
 .promo__wrapper {
   box-sizing: border-box;
-  padding: 31px 30px 167px;
+  padding: 31px 30px 169px;
 
   background-image: url("../img/icons/zigzag-line.svg");
   background-position: left bottom;
   background-repeat: repeat-x;
+
+  /*@media (min-width: 400px) {
+    padding-bottom: 200px;
+  }*/
 }
 
 .promo__title {
@@ -26,6 +30,8 @@
 
   margin-top: 16px;
   color: #444444;
+  box-sizing: border-box;
+  min-height: 72px;
 }
 
 .promo__params {
@@ -50,7 +56,8 @@
 }
 
 .promo__picture {
-  margin-top: 26px;
+  display: block;
+  margin: 26px auto 0;
 }
 
 .promo__body {
@@ -71,4 +78,7 @@
 .promo-button {
   position: absolute;
   top: 630px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
 }
