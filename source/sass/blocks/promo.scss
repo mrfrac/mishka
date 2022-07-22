@@ -1,0 +1,74 @@
+.promo__wrapper {
+  box-sizing: border-box;
+  padding: 31px 30px 167px;
+
+  background-image: url("../img/icons/zigzag-line.svg");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+
+.promo__title {
+  @include mb-s25-h30;
+
+  color: #000000;
+  margin: 0 0 5px;
+}
+
+.promo__tag {
+  @include mb-s17-h20;
+
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.promo__description {
+  @include mr-s15-h24;
+
+  margin-top: 16px;
+  color: #444444;
+}
+
+.promo__params {
+  @include clear-list-styles;
+
+  margin-top: 22px;
+}
+
+.promo__params-item {
+  @include mr-s15-h20;
+
+  color: #444444;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  padding-bottom: 13px;
+  padding-top: 6px;
+}
+
+.promo__params-label {
+  width: 97px;
+}
+
+.promo__picture {
+  margin-top: 26px;
+}
+
+.promo__body {
+  position: relative;
+}
+
+.promo__price {
+  @include mb-s17-h24;
+
+  color: #444444;
+  display: block;
+  position: absolute;
+  top: 565px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.promo-button {
+  position: absolute;
+  top: 630px;
+}

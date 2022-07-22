@@ -17,6 +17,10 @@
 
 .page-header__title {
   margin-top: 57px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .page-header__title-text {
@@ -25,13 +29,6 @@
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-.page-header__title {
-  margin-left: -30px;
-  margin-right: -30px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .page-header__title--index {
@@ -44,7 +41,7 @@
   @include mobile-only {
     background-size: 320px 373px;
     background-image: url("../img/hero-mobile.jpg");
-    background-position: 0 -16px;
+    background-position: center -16px;
 
     @include retina {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -81,6 +78,5 @@
     content: url("../img/icons/menu-close.svg");
     width: 21px;
     height: 20px;
-
   }
 }

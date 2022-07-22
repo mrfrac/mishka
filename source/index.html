@@ -89,7 +89,7 @@
             </li>
           </ul>
           <p class="promo__price">Цена: 990 руб.</p>
-          <a class="button promo-button" href="#">Заказать</a>
+          <a class="button button--ghost promo-button" href="#">Заказать</a>
         </div>
         <picture>
           <source type="image/webp" media="(min-width: 1150px)" srcset="img/promo-desktop.webp 1x, img/promo-desktop@2x.webp 2x">
@@ -104,15 +104,15 @@
     <section class="about">
       <div class="about__wrapper">
         <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item about__item--materials">Экологически <br> чистые материалы</li>
+          <li class="about__item about__item--style">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="about__item about__item--handmade">Связано вручную <br> с&nbsp;любовью и&nbsp;умилением</li>
+          <li class="about__item about__item--support">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--packing">Поставляется <br> в&nbsp;подарочной упаковке</li>
+        </ul>
       </div>
-      <ul class="about__list">
-        <li class="about__item about__item--materials">Экологически чистые материалы</li>
-        <li class="about__item about__item--style">Скандинавский стиль по&nbsp;российской цене</li>
-        <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
-        <li class="about__item about__item--handmade">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
-        <li class="about__item about__item--support">Поддержка отечественного производителя</li>
-        <li class="about__item about__item--packing">Поставляется в&nbsp;подарочной упаковке</li>
-      </ul>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper">
@@ -121,38 +121,38 @@
           у&nbsp;популярных инстамамочек.
           В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке,
           и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</blockquote>
+        <p class="reviews__author-name">Анастасия Красильникова</p>
+        <span class="reviews__author-nickname">@misssssiskras</span>
+        <div class="reviews__navigation">
+          <button class="reviews__button reviews__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+          <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+        </div>
+        <a class="button button--ghost reviews__review-button" href="#">Написать</a>
       </div>
-      <p class="reviews__author-name">Анастасия Красильникова</p>
-      <span class="reviews__author-nickname">@misssssiskras</span>
-      <div class="reviews__navigation">
-        <button class="reviews__button reviews__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-        <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
-      </div>
-      <a class="reviews__review-button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__email">
+          <span class="contacts__email-label">e-mail:</span>
+          <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </div>
+        <address class="contacts__address">
+          <span class="contacts__address-label">адрес:</span>
+          <span class="contacts__address-value">
+            г. Санкт-Петербург <br>
+            ул. Большая Конюшенная <br>
+            д. 19/8, офис 101
+          </span>
+        </address>
       </div>
-      <div class="contacts__email">
-        <span class="contacts__email-label">e-mail:</span>
-        <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-      </div>
-      <address class="contacts__address">
-        <span class="contacts__address-label">адрес:</span>
-        <span class="contacts__address-value">
-          г. Санкт-Петербург <br>
-          ул. Большая Конюшенная <br>
-          д. 19/8, офис 101
-        </span>
-      </address>
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586849!2d30.32085335225451!3d59.93871648178725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1657699839672!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <a class="button contacts__button" href="#">Напишите нам</a>
+      <a class="button button--ghost contacts__button" href="#">Напишите нам</a>
     </section>
   </main>
 
   <footer class="page-footer">
-      <div class="page-footer-wrapper">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo-link">
           <svg class="page-footer__logo-icon" width="102" height="34">
             <use href="img/sprite.svg#footer-logo"></use>

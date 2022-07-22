@@ -1,0 +1,15 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 24px 30px 22px;
+}
+
+.copyright__text {
+  @include mb-s19-h18;
+
+  margin: 0;
+  display: block;
+  margin-right: 27px;
+}

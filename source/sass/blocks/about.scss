@@ -1,0 +1,93 @@
+.about__wrapper {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about__title {
+  @include mb-s25-h30;
+
+  margin-bottom: 0;
+}
+
+.about__list {
+  @include clear-list-styles;
+}
+
+.about__item {
+  @include mb-s17-h20;
+
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    display: block;
+  }
+}
+
+.about__item--materials {
+  &::before {
+    content: url("../img/icons/materials.svg");
+    width: 33px;
+    height: 38px;
+    margin-top: 28px;
+    margin-left: 8px;
+    margin-bottom: 17px;
+  }
+}
+
+.about__item--style {
+  &::before {
+    content: url("../img/icons/style.svg");
+    width: 42px;
+    height: 27px;
+    margin-top: 29px;
+    margin-left: 0;
+    margin-bottom: 27px;
+  }
+}
+
+.about__item--likes {
+  &::before {
+    content: url("../img/icons/likes.svg");
+    width: 34px;
+    height: 27px;
+    margin-top: 34px;
+    margin-bottom: 22px;
+    margin-left: 7px;
+  }
+}
+
+.about__item--handmade {
+  &::before {
+    content: url("../img/icons/handmade.svg");
+    width: 35px;
+    height: 34px;
+    margin-top: 31px;
+    margin-bottom: 18px;
+    margin-left: 3px;
+  }
+}
+
+.about__item--support {
+  &::before {
+    content: url("../img/icons/support.svg");
+    width: 55px;
+    height: 23px;
+    margin-top: 32px;
+    margin-bottom: 27px;
+    margin-left: -6px;
+  }
+}
+
+.about__item--packing {
+  &::before {
+    content: url("../img/icons/packing.svg");
+    width: 33px;
+    height: 32px;
+    margin-top: 31px;
+    margin-bottom: 21px;
+    margin-left: 3px;
+  }
+}

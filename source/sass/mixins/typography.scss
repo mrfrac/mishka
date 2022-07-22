@@ -8,12 +8,52 @@
 
 // Main fonts
 
+@mixin mr-s14-h30 {
+  @include typography-template(14px, 30px, $main-font-family, 400);
+}
+
+@mixin mr-s15-h20 {
+  @include typography-template(15px, 20px, $main-font-family, 400);
+}
+
+@mixin mr-s15-h24 {
+  @include typography-template(15px, 24px, $main-font-family, 400);
+}
+
+@mixin mr-s15-h30 {
+  @include typography-template(15px, 30px, $main-font-family, 400);
+}
+
+@mixin mr-s17-h30 {
+  @include typography-template(17px, 30px, $main-font-family, 400);
+}
+
+@mixin mb-s17-h16 {
+  @include typography-template(17px, 16px, $main-font-family, 700);
+}
+
+@mixin mb-s17-h20 {
+  @include typography-template(17px, 20px, $main-font-family, 700);
+}
+
 @mixin mb-s17-h24 {
   @include typography-template(17px, 24px, $main-font-family, 700);
 }
 
+@mixin mb-s18-h20 {
+  @include typography-template(18px, 20px, $main-font-family, 700);
+}
+
+@mixin mb-s19-h18 {
+  @include typography-template(19px, 18px, $main-font-family, 700);
+}
+
 @mixin mb-s19-h24 {
   @include typography-template(19px, 24px, $main-font-family, 700);
+}
+
+@mixin mb-s25-h30 {
+  @include typography-template(25px, 30px, $main-font-family, 700);
 }
 
 @mixin mb-s27-h30 {

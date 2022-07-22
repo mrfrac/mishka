@@ -1,0 +1,22 @@
+.button {
+  @include mb-s17-h16;
+
+  width: 100%;
+  background-color: #63d1bb;
+  color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--ghost {
+  @include mb-s18-h20;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  color: #444444;
+  padding-top: 16px;
+  padding-bottom: 13px;
+}

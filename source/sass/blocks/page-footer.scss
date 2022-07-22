@@ -1,0 +1,16 @@
+.page-footer__wrapper {
+  padding-top: 27px;
+  background-color: #f1f1f1;
+}
+
+.page-footer__logo-link {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.page-footer__social {
+  width: 142px;
+  margin: 0 auto;
+  padding-bottom: 27px;
+}
